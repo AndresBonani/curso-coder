@@ -1,0 +1,535 @@
+/*Vista desktop*/
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;  
+  }
+
+h1 {
+    color: darkgreen;
+    font-size: 40px;
+    margin: 20px;
+}
+
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+}
+
+.resaltado {
+    background-color: rgb(79, 180, 96);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+}
+
+article {
+    margin: 40px 0px;
+}
+
+#specialfoot {
+    color: rgb(0, 46, 2);
+}
+
+form {
+    background-image: url(../assests/img/fondocontacto.jpg);
+    padding: 40px;
+    width: 100%;
+}
+
+.botonazo{
+    background-color: rgb(4, 105, 21);
+    border-color: rgb(4, 105, 21) ;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-right: 20px;
+    font-weight: bolder;
+    padding: 5px 15px;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 10px;
+}
+
+h4 {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.wide {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+li {
+    display: inline;
+    padding: 20px;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    margin-bottom: 10px;
+}
+
+.gradiada {
+    background-image: linear-gradient(to right, rgb(6, 236, 45), rgb(4, 105, 21));
+}
+
+.servicios h1{
+    font-weight: bold;
+}
+
+.servicios {
+    margin: 50px;
+}
+
+.imagenMediana {
+    height: 280px;
+    margin: 10px;
+}
+
+.transiScale {
+    height: 280px;
+    margin: 10px;
+    transition: all 0.5s; 
+}
+
+.transiScale:hover {
+    height: 300px; 
+ }
+ 
+.transFocus {
+    width: 150px; 
+    height: 30px;
+    transition: all 2s;       
+ }
+
+.transFocus:focus {
+    width: 200px;
+    height: 35px;
+    font-size: 24px;
+ }
+ 
+
+.imagenPeque {
+    height: 200px;
+    margin: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+.tablita {
+    width: 90%;
+    margin: 20px 5%;
+    font-size: 20px;
+}
+
+.contenedor-input {
+    margin: 15px;
+}
+
+.trementable {
+    background-color: black;
+    color: cornsilk;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.flex-item {
+    flex-basis: 30%;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+/* Grid */
+
+.contenedorGrid {
+    display: grid;
+    grid-template-areas:
+    "titulo titulo"
+    "info formulario"
+    ;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: 1fr 5fr;
+}
+
+#titulo {
+    grid-area: titulo;
+    margin-top: 20px;
+}
+
+#info {
+    grid-area: info;
+}
+
+#formulario {
+    grid-area: formulario;
+}
+
+.ulFlex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*Vista Mobile*/
+@media only screen and (max-width: 768px){
+    h1 {
+        color: rgb(54, 2, 122);
+    }
+    
+    body {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+    }
+    
+    .resaltado {
+        background-color: darkolivegreen;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        margin-top: 40px;
+    }
+    
+    #specialfoot {
+        color: rgb(0, 46, 2);
+    }
+    
+    form {
+        background-image: url(../assests/img/fondocontacto.jpg);
+        padding: 40px;
+        width: 100%;
+    }
+    
+    .botonazo{
+        background-color: rgb(20, 1, 105);
+        border-color: rgb(1, 58, 44) ;
+        color: rgb(255, 255, 255);
+        margin-top: 20px;
+        margin-right: 20px;
+        font-weight: bolder;
+        padding: 5px 15px;
+    }
+    
+    section article h3 {
+        font-size: 40px;
+    }
+    
+    .wide {
+        width: 100%;
+    }
+    
+    ul {
+        list-style: none;
+        font-size: 20px;
+    }
+    
+    li {
+        display: inline;
+        padding: 20px;
+    }
+    
+    nav {
+        position: sticky;
+        top: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .gradiada {
+        background-image: linear-gradient(to right, rgb(6, 236, 45), rgb(4, 105, 21));
+    }
+    
+    .servicios h1{
+        font-weight: bold;
+    }
+    
+    .servicios {
+        margin: 50px;
+    }
+    
+    .imagenMediana {
+        height: 280px;
+        margin: 10px;
+    }
+    
+    .transiScale {
+        height: 280px;
+        margin: 10px;
+        transition: all 0.5s; 
+    }
+    
+    .transiScale:hover {
+        height: 300px; 
+     }
+     
+    .transFocus {
+        width: 150px; 
+        height: 30px;
+        transition: all 2s;       
+     }
+    
+    .transFocus:focus {
+        width: 200px;
+        height: 35px;
+        font-size: 24px;
+     }
+     
+    
+    .imagenPeque {
+        height: 200px;
+        margin: 10px;
+    }
+    
+    table {
+        width: 100%;
+    }
+    
+    .contenedor-input {
+        margin: 15px;
+    }
+    
+    .trementable {
+        background-color: black;
+        color: cornsilk;
+    }
+    
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .flex-item {
+        background-color: aliceblue;
+        flex-basis: 30%;
+        margin-top: 20px;
+    }
+    
+    form {
+        margin-bottom: 20px;
+    }
+    
+    /* Grid */
+    
+    .contenedorGrid {
+        display: grid;
+        grid-template-areas:
+        "titulo titulo"
+        "info formulario"
+        ;
+        grid-template-columns: 1fr 2fr;
+        grid-auto-rows: 1fr 5fr;
+    }
+    
+    #titulo {
+        grid-area: titulo;
+        margin-top: 20px;
+    }
+    
+    #info {
+        grid-area: info;
+    }
+    
+    #formulario {
+        grid-area: formulario;
+    }
+    
+    .ulFlex {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+
+/*Vista Tablet*/
+@media only screen and (min-width: 769px) and (max-width:1020px){
+    h1 {
+        color: rgb(207, 3, 3);
+    }
+    
+    body {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 10px;
+        /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+    }
+    
+    .resaltado {
+        background-color: darkolivegreen;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        margin-top: 40px;
+    }
+    
+    #specialfoot {
+        color: rgb(0, 46, 2);
+    }
+    
+    form {
+        background-image: url(../assests/img/fondocontacto.jpg);
+        padding: 40px;
+        width: 100%;
+    }
+    
+    .botonazo{
+        background-color: rgb(20, 1, 105);
+        border-color: rgb(1, 58, 44) ;
+        color: rgb(255, 255, 255);
+        margin-top: 20px;
+        margin-right: 20px;
+        font-weight: bolder;
+        padding: 5px 15px;
+    }
+    
+    section article h3 {
+        font-size: 40px;
+    }
+    
+    .wide {
+        width: 100%;
+    }
+    
+    ul {
+        list-style: none;
+        font-size: 20px;
+    }
+    
+    li {
+        display: inline;
+        padding: 20px;
+    }
+    
+    nav {
+        position: sticky;
+        top: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .gradiada {
+        background-image: linear-gradient(to right, rgb(6, 236, 45), rgb(4, 105, 21));
+    }
+    
+    .servicios h1{
+        font-weight: bold;
+    }
+    
+    .servicios {
+        margin: 50px;
+    }
+    
+    .imagenMediana {
+        height: 280px;
+        margin: 10px;
+    }
+    
+    .transiScale {
+        height: 280px;
+        margin: 10px;
+        transition: all 0.5s; 
+    }
+    
+    .transiScale:hover {
+        height: 300px; 
+     }
+     
+    .transFocus {
+        width: 150px; 
+        height: 30px;
+        transition: all 2s;       
+     }
+    
+    .transFocus:focus {
+        width: 200px;
+        height: 35px;
+        font-size: 24px;
+     }
+     
+    
+    .imagenPeque {
+        height: 200px;
+        margin: 10px;
+    }
+    
+    table {
+        width: 100%;
+    }
+    
+    .contenedor-input {
+        margin: 15px;
+    }
+    
+    .trementable {
+        background-color: black;
+        color: cornsilk;
+    }
+    
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .flex-item {
+        background-color: aliceblue;
+        flex-basis: 30%;
+        margin-top: 20px;
+    }
+    
+    form {
+        margin-bottom: 20px;
+    }
+    
+    /* Grid */
+    
+    .contenedorGrid {
+        display: grid;
+        grid-template-areas:
+        "titulo titulo"
+        "info formulario"
+        ;
+        grid-template-columns: 1fr 2fr;
+        grid-auto-rows: 1fr 5fr;
+    }
+    
+    #titulo {
+        grid-area: titulo;
+        margin-top: 20px;
+    }
+    
+    #info {
+        grid-area: info;
+    }
+    
+    #formulario {
+        grid-area: formulario;
+    }
+    
+    .ulFlex {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
