@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link a bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Clase 9 - Bootstrap</title>
+</head>
+<body>
+    <header class="container-fluid nopad">
+        <section>
+            <article class="container-fluid nopad">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12 nopad">
+                        <img src="assets/img/portada.jpg" alt="portada" class="wide">
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <h1 class="centrado">Cooperativa GAIA</h1>
+                    </div>
+                </div>
+            </article>
+        </section>
+        </div>
+    </header>
+<!-- Carousel -->   
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/GAIA01.jpg" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/GAIA02.jpg" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/GAIA03.jpg" class="d-block w-100 img-fluid" alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- Cierre Carrousel-->
+    <section class="container-fluid resaltado">
+        <div class="row">
+            <div class="col-lg-12 col-xs-12 espaciado">
+                <h3>Metodología de Trabajo</h3>              
+            </div>
+            <div class="col-lg-4 col-xs-12">
+                <h4>Desarrollo de software</h4>
+				<p>
+					Desarrollamos software a medida de las necesidades del proyecto.
+					Buscamos las mejores soluciones a las particularidades del negocio y potenciamos tu aplicación pensando en su crecimiento y adaptación.
+				</p>                
+            </div>
+            <div class="col-lg-4 col-xs-12"> 
+                <h4>Aplicaciones Web</h4>
+				<p>
+					Diseñamos tu sitio para potenciar tu presencia en la web manteniendo la identidad del producto.
+					Utilizamos las últimas tecnologías, haciendo foco en la estética y en la usabilidad.
+				</p>               
+            </div>
+            <div class="col-lg-4 col-xs-12">    
+                <h4>Aplicaciones Mobile</h4>
+				<p>
+					Construimos y diseñamos aplicaciones híbridas para Android y IOS. Te asesoramos en el desarollo y diseño para que tu aplicación móvil se haga realidad.
+				</p>            
+            </div>
+        </div>
+    </section>
+    <article class="container-fluid nopad">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12 nopad">
+                <h3 class="centrado">Más Información</h3>
+            </div>
+            <div class="col-lg-12 col-md-12 col-xs-12">
+                <p class="centrado">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ipsum vitae obcaecati cumque atque id labore sed in? In fugiat quod numquam, sed deleniti consequatur tempore illo provident doloremque mollitia! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex deserunt eveniet numquam a rem nisi, sequi possimus! Dolor excepturi asperiores alias, recusandae praesentium quos, vero assumenda eveniet veritatis consequuntur distinctio.</p>
+            </div>
+        </div>
+    </article>
+    <!--Dropdown-->
+    <div class="dropdown centrado">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Mira lo que es este Dropdown
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Opcion 1</a>
+          <a class="dropdown-item" href="#">Accion 2</a>
+          <a class="dropdown-item" href="#">Accion 3</a>
+        </div>
+      </div>
+
+    <footer class="container-fluid resaltado2">
+        <div class="row">
+            <div class="col-lg-4 col-xs-12">
+                <h4>Info Footer 1</h4>
+				<p>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam voluptates deleniti impedit aperiam possimus unde laborum laboriosam nihil iure. Adipisci eveniet eius consequuntur sequi officiis? Magnam debitis quas nobis corporis.
+				</p>                
+            </div>
+            <div class="col-lg-4 col-xs-12"> 
+                <h4>Info Footer 2</h4>
+				<p>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi exercitationem cupiditate quam aut qui itaque. Eos iure mollitia dolore, voluptatibus, sunt id saepe totam quam ullam illum inventore, consequatur laboriosam.
+				</p>               
+            </div>
+            <div class="col-lg-4 col-xs-12">    
+                <h4>Info Footer 3</h4>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea numquam dicta magni repellat blanditiis eveniet alias error voluptas ducimus labore, esse totam odio aliquid dolorem quia quod laboriosam suscipit quas.
+				</p>            
+            </div>
+        </div>
+    </footer>
+    <!-- Link a bootstrap Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
