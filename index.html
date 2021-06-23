@@ -1,77 +1,152 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/estilos.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-	<title>Proyecto - Bonani</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link a bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--Link a AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <title>Clase 9 - Bootstrap</title>
 </head>
 <body>
-	<header>
-		<nav class="gradiada">
-			<ul class="ulFlex">
-				<li>Inicio</li>
-				<li><a href="pages/quehacemos.html">Qué hacemos</a></li>
-				<li><a href="pages/trabajos.html">Nuestros Trabajos</a></li>
-				<li><a href="pages/tecnologias.html">Tecnologias</a></li>
-				<li><a href="pages/contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
-		<h4>LOGO</h4>
-		<img src="assests/img/portada.jpg" alt="portada" class="wide">
-		<h1>Cooperativa GAIA</h1>
-	</header>
-	<section class="resaltado">
-		<h3>Metodología de Trabajo</h3>
-		<div class="flex">
-			<div class="flex-item">
-				<h4 class="">Desarrollo de software</h4>
+    <header class="container-fluid nopad">
+        <div class="row ">
+            <div class="col-lg-12 col-xs-12 nopad stick">
+                <!--Comienzo Nav-->
+                <nav class="navbar navbar-expand-lg navbar-light nav--color nav--padding">
+                    <a class="navbar-brand" href="#">Cooperativa Gaia</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-link active marginado" href="#">Inicio<span class="sr-only">(current)</span></a>
+                        <a class="nav-link marginado" href="/pages/trabajos.html">Nuestros Trabajos</a>
+                        <a class="nav-link marginado" href="/pages/contacto.html">Contacto</a>
+                      </div>
+                    </div>
+                </nav>
+                <!--Cierre Nav-->
+            </div>
+        <section>
+            <article class="container-fluid nopad">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12 nopad">
+                        <img src="assets/img/portada.jpg" alt="portada" class="wide">
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <h1 class="centrado">Cooperativa GAIA</h1>
+                    </div>
+                </div>
+            </article>
+        </section>
+        </div>
+    </header>
+<div data-aos="fade-right"">
+    <section class="container-fluid seccion--resaltada">
+        <div class="row">
+            <div class="col-lg-12 col-xs-12 espaciado">
+                <h3>Metodología de Trabajo</h3>              
+            </div>
+            <div class="col-lg-4 col-xs-12">
+                <h4 class="espaciado">Desarrollo de software</h4>
 				<p>
 					Desarrollamos software a medida de las necesidades del proyecto.
 					Buscamos las mejores soluciones a las particularidades del negocio y potenciamos tu aplicación pensando en su crecimiento y adaptación.
-				</p>
-			</div>
-			<div class="flex-item">
-				<h4>Aplicaciones Web</h4>
+				</p>                
+            </div>
+            <div class="col-lg-4 col-xs-12"> 
+                <h4 class="espaciado">Aplicaciones Web</h4>
 				<p>
 					Diseñamos tu sitio para potenciar tu presencia en la web manteniendo la identidad del producto.
 					Utilizamos las últimas tecnologías, haciendo foco en la estética y en la usabilidad.
-				</p>
-			</div>
-			<div class="flex-item">
-				<h4>Aplicaciones Mobile</h4>
+				</p>               
+            </div>
+            <div class="col-lg-4 col-xs-12">    
+                <h4 class="espaciado">Aplicaciones Mobile</h4>
 				<p>
 					Construimos y diseñamos aplicaciones híbridas para Android y IOS. Te asesoramos en el desarollo y diseño para que tu aplicación móvil se haga realidad.
-				</p>
-			</div>
-	</section>
-	<!-- En el caso de la web que estoy planteando no tendría info técnica ni productos,
-	así que usé tanto la tabla como la lista ordenada mostrando otras cosas -->
-	<section>
-		<article>
-			<h3>Costos de los Servicios:</h3>
-			<table border="1" cellpadding="10" class="tablita">
-				<tr class="trementable">
-					<th>Código</th>
-					<th>Descripción</th>
-					<th>Valor</th>
-				</tr>
-				<tr>
-					<td>0001</td>
-					<td>Desarrollo Web</td>
-					<td>$5.500</td>
-				</tr>
-				<tr>
-					<td>0002</td>
-					<td>Desarrollo Mobile</td>
-					<td>$8.700</td>
-				</tr>
-			</table>
-		</article>
-	</section>
-	<footer id="specialfoot">
-		<h4>LOGO</h4>
-	</footer>
+				</p>            
+            </div>
+        </div>
+    </section>
+</div>
+<div data-aos="fade-left">
+    <section class="container-fluid seccion--resaltada2">
+        <div class="row">
+            <div class="col-lg-12 col-xs-12 espaciado">
+                <h3>Nuestros servicios</h3>              
+            </div>
+            <div class="col-lg-4 col-xs-12">
+                <h4 class="espaciado">Testing</h4>
+                <p>
+                    Proveemos servicios de testing manual y automático para garantizar la calidad de tu producto.
+                </p>                
+            </div>
+            <div class="col-lg-4 col-xs-12"> 
+                <h4 class="espaciado">Mantenimiento</h4>
+                <p>
+                    Mantenemos vivo tu proyecto con actualizaciones visuales, nuevas funcionalidades y diseño creativo.
+                </p>               
+            </div>
+            <div class="col-lg-4 col-xs-12">    
+                <h4 class="espaciado">Hosting</h4>
+                <p>
+                    Garantizamos la disponibilidad de tu proyecto en Internet. El alojamiento y el dominio ya no serán un problema del que ocuparte.
+                </p>            
+            </div>
+        </div>
+    </section>
+</div>
+<div data-aos="fade-up">
+    <article class="container-fluid nopad">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12 nopad">
+                <h3 class="centrado">Más Información</h3>
+            </div>
+            <div class="col-lg-12 col-md-12 col-xs-12">
+                <p class="centrado2">Somos una cooperativa creada desde la creatividad y el compromiso con cada proyecto, con el objetivo de desarrollar soluciones informáticas integrales que respondan a tus necesidades y materialicen tus ideas. <br>
+                    Nos formamos en programación, diseño y desarrollo de aplicaciones Web y Mobile, buscando avanzar continuamente hacia la innovación y la profesionalización para darle vida a tus proyectos y crear productos únicos para cualquier plataforma o dispositivo
+            </div>
+        </div>
+    </article>
+</div>
+<div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
+    <footer class="container-fluid footer--resaltado">
+        <div class="row">
+            <div class="col-lg-4 col-xs-12">
+                <h4>Redes</h4>
+                <div>
+                    <a href="https://www.facebook.com/GaiaCoopTech">Facebook</a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/gaia_coop/">Instagram</a>
+                </div>      
+            </div>
+            <div class="col-lg-4 col-xs-12"> 
+                <h4>Diseño</h4>
+				<p>
+				Web desarrollada con amor por <a href="https://gaiacoop.tech/">Gaia Coop</a> ♥
+				</p>               
+            </div>
+            <div class="col-lg-4 col-xs-12">    
+                <h4>Cooperativismo</h4>
+				<p>
+				Formamos parte de <a href="https://facttic.org.ar/">Facttic</a>, la Federación de Cooperativas de Tecnología.
+				</p>            
+            </div>
+        </div>
+    </footer>
+</div>
+    <!-- Link a bootstrap Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!--Script AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
